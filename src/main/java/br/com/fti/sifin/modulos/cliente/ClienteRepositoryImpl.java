@@ -1,4 +1,4 @@
-package br.com.fti.sifin.repositorio.impl;
+package br.com.fti.sifin.modulos.cliente;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -16,8 +16,6 @@ import org.springframework.util.StringUtils;
 
 import br.com.fti.sifin.entidades.empresa.Cliente;
 import br.com.fti.sifin.entidades.empresa.Cliente_;
-import br.com.fti.sifin.repositorio.filtro.FiltroCliente;
-import br.com.fti.sifin.repositorio.query.ClienteRepositoryQuery;
 
 @Component
 public class ClienteRepositoryImpl implements ClienteRepositoryQuery {
@@ -27,7 +25,7 @@ public class ClienteRepositoryImpl implements ClienteRepositoryQuery {
 	
 	
 	@Override
-	public List<Cliente> filtrar(FiltroCliente filtroCliente) {
+	public List<Cliente> filtrar(ClienteFilter filtroCliente) {
 		
 		CriteriaBuilder builder = manager.getCriteriaBuilder();
 		CriteriaQuery<Cliente> criteria = builder.createQuery(Cliente.class);
@@ -45,7 +43,7 @@ public class ClienteRepositoryImpl implements ClienteRepositoryQuery {
 	}
 
 
-	private Predicate[] criarRestricoes(FiltroCliente filtroCliente, CriteriaBuilder builder, Root<Cliente> root) {
+	private Predicate[] criarRestricoes(ClienteFilter filtroCliente, CriteriaBuilder builder, Root<Cliente> root) {
 		
 		
 		List<Predicate> predicates = new ArrayList<>();

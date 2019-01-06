@@ -1,4 +1,4 @@
-package br.com.fti.sifin.servicos;
+package br.com.fti.sifin.modulos.empresa;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +10,6 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import br.com.fti.sifin.entidades.global.Empresa;
-import br.com.fti.sifin.repositorio.global.RepEmpresa;
 
 /*******************************************************************************
  * Classe Serviço Regras de negócio da Empresa Desenvolvido por :
@@ -18,13 +17,13 @@ import br.com.fti.sifin.repositorio.global.RepEmpresa;
  * @author Bob-Odin - 01/02/2017
  *******************************************************************************/
 @Service
-public class ServicoEmpresa {
+public class EmpresaService {
 
 	/****************************************************************************
 	 * Variaveis e Dependências
 	 ****************************************************************************/
 	@Autowired
-	RepEmpresa repEmpresa;
+	EmpresaRepository repEmpresa;
 
 	/****************************************************************************
 	 * Validar e salvar

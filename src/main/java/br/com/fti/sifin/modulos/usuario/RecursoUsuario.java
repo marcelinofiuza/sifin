@@ -1,4 +1,4 @@
-package br.com.fti.sifin.recurso;
+package br.com.fti.sifin.modulos.usuario;
 
 import java.util.List;
 
@@ -23,7 +23,6 @@ import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fti.sifin.entidades.global.Usuario;
 import br.com.fti.sifin.eventos.RecursoCriadoEvent;
-import br.com.fti.sifin.servicos.ServicoUsuario;
 
 @RestController
 @RequestMapping("usuario")

@@ -1,4 +1,4 @@
-package br.com.fti.sifin.repositorio.global;
+package br.com.fti.sifin.modulos.empresa;
 
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
@@ -11,7 +11,7 @@ import br.com.fti.sifin.entidades.global.Empresa;
  * @author Bob-Odin - 01/02/2017
  ****************************************************************************/
 @Repository
-public interface RepEmpresa extends JpaRepository<Empresa, Long> {
+public interface EmpresaRepository extends JpaRepository<Empresa, Long> {
 
 
 }

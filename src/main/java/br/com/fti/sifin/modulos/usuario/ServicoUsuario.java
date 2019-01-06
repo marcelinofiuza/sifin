@@ -1,4 +1,4 @@
-package br.com.fti.sifin.servicos;
+package br.com.fti.sifin.modulos.usuario;
 
 import java.util.List;
 import java.util.Optional;
@@ -10,7 +10,6 @@ import org.springframework.dao.EmptyResultDataAccessException;
 import org.springframework.stereotype.Service;
 
 import br.com.fti.sifin.entidades.global.Usuario;
-import br.com.fti.sifin.repositorio.global.RepUsuario;
 
 /*******************************************************************************
  * Classe Serviço Regras de negócio da Empresa Desenvolvido por :

@@ -9,7 +9,7 @@ import org.springframework.security.oauth2.common.OAuth2AccessToken;
 import org.springframework.security.oauth2.provider.OAuth2Authentication;
 import org.springframework.security.oauth2.provider.token.TokenEnhancer;
 
-import br.com.fti.sifin.servicos.ServicoUsuario;
+import br.com.fti.sifin.modulos.usuario.ServicoUsuario;
 
 public class CustonTokenEnhancer  implements TokenEnhancer {
 

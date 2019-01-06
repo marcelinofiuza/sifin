@@ -10,7 +10,7 @@ import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
 import br.com.fti.sifin.entidades.global.Usuario;
-import br.com.fti.sifin.repositorio.global.RepUsuario;
+import br.com.fti.sifin.modulos.usuario.RepUsuario;
 
 @Service
 public class AppUserDetailService implements UserDetailsService {

@@ -1,8 +1,8 @@
-package br.com.fti.sifin.repositorio.filtro;
+package br.com.fti.sifin.modulos.cliente;
 
 import br.com.fti.sifin.util.R42Util;
 
-public class FiltroCliente {
+public class ClienteFilter {
 
 	private String razaoSocial;
 

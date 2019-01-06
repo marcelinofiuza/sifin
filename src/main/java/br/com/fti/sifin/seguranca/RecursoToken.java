@@ -1,4 +1,4 @@
-package br.com.fti.sifin.recurso;
+package br.com.fti.sifin.seguranca;
 
 import javax.servlet.http.Cookie;
 import javax.servlet.http.HttpServletRequest;

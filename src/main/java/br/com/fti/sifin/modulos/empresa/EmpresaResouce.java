@@ -1,4 +1,4 @@
-package br.com.fti.sifin.recurso;
+package br.com.fti.sifin.modulos.empresa;
 
 import java.util.List;
 
@@ -26,17 +26,16 @@ import org.springframework.web.bind.annotation.RestController;
 import br.com.fti.sifin.configuration.SifinApiProperty;
 import br.com.fti.sifin.entidades.global.Empresa;
 import br.com.fti.sifin.eventos.RecursoCriadoEvent;
-import br.com.fti.sifin.servicos.ServicoEmpresa;
 
 @RestController
 @RequestMapping("empresa")
-public class RecursoEmpresa {
+public class EmpresaResouce {
 
 	/****************************************************************************
 	 * Classes e Variaveis
 	 ****************************************************************************/	
 	@Autowired
-	private ServicoEmpresa servicoEmpresa;
+	private EmpresaService servicoEmpresa;
 	@Autowired
 	private ApplicationEventPublisher publisher;
 	@Autowired

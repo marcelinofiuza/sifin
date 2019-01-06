@@ -1,4 +1,4 @@
-package br.com.fti.sifin.recurso;
+package br.com.fti.sifin.modulos.cliente;
 
 import java.util.List;
 
@@ -9,18 +9,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
 import br.com.fti.sifin.entidades.empresa.Cliente;
-import br.com.fti.sifin.repositorio.filtro.FiltroCliente;
-import br.com.fti.sifin.servicos.ServicoCliente;
 
 @RestController
 @RequestMapping("cliente")
-public class RecursoCliente {
+public class ClienteResouce {
 	
 	/****************************************************************************
 	 * Classes e Variaveis
 	 ****************************************************************************/	
 	@Autowired
-	private ServicoCliente servicoCliente;
+	private ClienteService servicoCliente;
 	
 	
 	/****************************************************************************
@@ -29,7 +27,7 @@ public class RecursoCliente {
 	@GetMapping
 	@PreAuthorize("hasAuthority('ROLE_PESQUISAR_CLIENTE'")
 	public List<Cliente> listar() {
-		FiltroCliente filtroCliente = new FiltroCliente();
+		ClienteFilter filtroCliente = new ClienteFilter();
 		return servicoCliente.Listar(filtroCliente);
 	}
 	

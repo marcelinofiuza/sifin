@@ -1,4 +1,4 @@
-package br.com.fti.sifin.repositorio.global;
+package br.com.fti.sifin.modulos.usuario;
 
 import java.util.Optional;
 
