@@ -17,10 +17,10 @@ import br.com.fti.sifin.entidades.global.Usuario;
  * @author Bob-Odin - 23/05/2018
  *******************************************************************************/
 @Service
-public class ServicoUsuario {
+public class UsuarioService {
 
 	@Autowired
-	RepUsuario repUsuario;
+	UsuarioRepository repUsuario;
 
 	/****************************************************************************
 	 * Listar todos os registros

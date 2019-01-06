@@ -26,14 +26,14 @@ import br.com.fti.sifin.eventos.RecursoCriadoEvent;
 
 @RestController
 @RequestMapping("usuario")
-public class RecursoUsuario {
+public class UsuarioResource {
 
 	
 	/****************************************************************************
 	 * Classes e Variaveis
 	 ****************************************************************************/		
 	@Autowired
-	ServicoUsuario servicoUsuario;
+	UsuarioService servicoUsuario;
 	
 	@Autowired
 	private ApplicationEventPublisher publisher;	

@@ -13,7 +13,7 @@ import br.com.fti.sifin.entidades.global.Usuario;
  * @author Bob-Odin - 30/01/2017
  ****************************************************************************/
 @Repository
-public interface RepUsuario extends JpaRepository<Usuario, Long> {
+public interface UsuarioRepository extends JpaRepository<Usuario, Long> {
 
 	/****************************************************************************
 	 * Retornar o usuario pela Credencial
