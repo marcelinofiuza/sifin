@@ -32,11 +32,11 @@ public class CorsFilter implements Filter {
 		HttpServletRequest req = (HttpServletRequest) request;
 		HttpServletResponse res = (HttpServletResponse) response;
 
-		res.setHeader("Access-Control-Allow-Origin", sifinApiProperty.getOrigemPermitida().getEndereco());
+		res.setHeader("Access-Control-Allow-Origin", sifinApiProperty.getOrigemPermitida());
 		res.setHeader("Access-Control-Allow-Credentials", "true");
 
 		if (req.getMethod().equalsIgnoreCase("OPTIONS")
-				&& sifinApiProperty.getOrigemPermitida().getEndereco().equals(req.getHeader("Origin"))) {
+				&& sifinApiProperty.getOrigemPermitida().equals(req.getHeader("Origin"))) {
 
 			res.setHeader("Access-Control-Allow-Methods", "POST, GET, DELETE, PUT, OPTIONS");
 			res.setHeader("Access-Control-Allow-Headers", "Authorization, Content-Type, Accept");

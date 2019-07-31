@@ -32,10 +32,7 @@ public class CustonTokenEnhancer  implements TokenEnhancer {
 			
 		}
 		
-		
 
-		
-		
 		return accessToken;
 	}
 }

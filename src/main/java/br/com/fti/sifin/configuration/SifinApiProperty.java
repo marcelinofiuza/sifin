@@ -5,14 +5,14 @@ import org.springframework.boot.context.properties.ConfigurationProperties;
 @ConfigurationProperties("sifin")
 public class SifinApiProperty {
 
-	private final Seguranca seguranca = new Seguranca();
-	private final OrigemPermitida origemPermitida = new OrigemPermitida();
+	private Seguranca seguranca = new Seguranca();
+	private String origemPermitida = "http://localhost:4200";;
 
 	public Seguranca getSeguranca() {
 		return seguranca;
 	}
 
-	public OrigemPermitida getOrigemPermitida() {
+	public String getOrigemPermitida() {
 		return origemPermitida;
 	}
 
@@ -26,20 +26,6 @@ public class SifinApiProperty {
 
 		public void setEnableHttps(boolean enableHttps) {
 			this.enableHttps = enableHttps;
-		}
-
-	}
-
-	// Origem de acesso
-	public static class OrigemPermitida {
-		private String endereco;
-
-		public String getEndereco() {
-			return endereco;
-		}
-
-		public void setEndereco(String endereco) {
-			this.endereco = endereco;
 		}
 
 	}
